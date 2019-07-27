@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪类选择器</title>
+    <style>
+      /*实际开发中只会用的上hover*/
+      a:link{ /*未访问的链接*/
+        color: cornflowerblue;
+        font-size: 32px;
+      }
+      a:visited{ /*访问过一次后的样式*/
+        color: purple;
+        font-size: 24px;
+      }
+      a:hover{/* 鼠标经过时的样式*/
+        color: aqua;
+        font-size: 32px;
+      }
+      a:active{ /*鼠标点击没有松开时的样式*/
+        color: darkcyan;
+        font-size: 30px;
+      }
+    </style>
+</head>
+<body>
+  <a href="http://healthyfarm-html.themerex.net/">点击跳转</a>
+</body>
+</html>
