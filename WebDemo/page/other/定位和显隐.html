@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>元素显示隐藏和定位</title>
+    <style>
+      /*img{*/
+        /*visibility: hidden;//隐藏元素，但是之前元素所占的空间会存在 */
+      /*}*/
+      /*img{*/
+        /*display: none;//隐藏元素，不会占空间*/
+      /*}*/
+      /*.relate{*/
+        /*position: relative;*/
+        /*left: 30px;*/
+      /*}*/
+      /*.absolute{*/
+        /*position: absolute;*/
+        /*bottom: 300px;*/
+      /*}*/
+      .fixed{
+        position: fixed;
+        top:400px;
+      }
+    </style>
+</head>
+<body>
+  <p>这是一个P标签</p>
+  <img class="relate absolute fixed" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1564397896500&di=e90b31fba21484df329ea511b7761492&imgtype=0&src=http%3A%2F%2Fimg2.cache.netease.com%2Fpet%2F2015%2F7%2F3%2F2015070317040566407.jpg">
+  <h1>这是一个h1标签</h1>
+</body>
+</html>

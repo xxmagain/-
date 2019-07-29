@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>表格学习</title>
+    <style>
+      caption{
+        caption-side: top;
+        margin-bottom: 10px;
+      }
+      table{
+        border-collapse:collapse ;
+      }
+      table,th,td{
+        border: 1px solid black;
+      }
+      th{
+        width: 100px;
+        height: 30px;
+        text-align: center;
+        background-color: #cccccc;
+      }
+      td{
+        width: 100px;
+        text-align: center;
+      }
+    </style>
+</head>
+<body>
+  <table>
+    <tr> <td colspan="5">表格</td></tr>
+    <tr>
+      <th>商品名称</th>
+      <th>类别</th>
+      <th>数量／斤</th>
+      <th>单价／斤</th>
+      <th>销售金额</th>
+    </tr>
+    <tr>
+      <td>火龙果</td>
+      <td rowspan="4">水果</td>
+      <td>15</td>
+      <td>5</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>葡萄</td>
+      <td>50</td>
+      <td>1</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>芒果</td>
+      <td>10</td>
+      <td>8</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>桃子</td>
+      <td>25</td>
+      <td>1</td>
+      <td>25</td>
+    </tr>
+  </table>
+</body>
+</html>
