@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>伪元素选择器</title>
+    <style>
+      body{
+        width: 50%;
+      }
+      /*
+        .demo:类选择器
+        :first-child: 伪类选择器
+        ::first-letter:伪元素选择器
+      */
+      p::first-letter{ /*选择第一个字*/
+        color: red;
+        font-size: 20px;
+      }
+      p::first-line{ /*选择第一行*/
+        color: cyan;
+      }
+      P::selection{ /*当我们选中文字时，可以发生的变化*/
+        color: plum;
+      }
+      div{
+        color: purple;
+        font-size: 30px;
+        font-weight: 900;
+      }
+      div::before{ /*在div内部的前面或者后面添加内容*/
+        content:'我';
+      }
+      div::after{
+        content:'很高兴';
+      }
+    </style>
+</head>
+<body>
+  <h1>welcome</h1>
+  <p>“We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.““We eliminated any possible
+    pollution in our soils in order to deliver the purest organic produce to our customers’ tables.“</p>
+    <div>今天</div>
+</body>
+</html>

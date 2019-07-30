@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>子选择器</title>
+    <style>
+
+      .item li{ /*后代选择器*/
+        color: #0ff;
+      }
+      .item > li{/*子元素选择器*/
+        color: red;
+      }
+    </style>
+</head>
+<body>
+   <ul class="item">
+     <li>一级菜单
+        <ul>
+         <li>二级菜单1</li>
+         <li>二级菜单2</li>
+        </ul>
+     </li>
+     <li>一级菜单
+       <ul>
+         <li>二级菜单1</li>
+         <li>二级菜单2</li>
+       </ul>
+     </li>
+     <li>一级菜单
+       <ul>
+         <li>二级菜单1</li>
+         <li>二级菜单2</li>
+       </ul>
+     </li>
+   </ul>
+</body>
+</html>

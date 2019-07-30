@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .nav{
+        font-size: 18px;
+        font-weight: bold;
+      }
+      a{
+        color: #00ffff;
+      }
+      input[type=text]{ /*选择class属性type值为text的元素*/
+        color: red;
+      }
+      p[class^=fontsize]{ /*选择class属性值以fantasize开头的元素*/
+        color: darkcyan;
+        font-size: 30px;
+      }
+      p[class$=footer]{ /*选择class属性值以footer结尾的元素*/
+        color: blueviolet;
+        font-size: 25px;
+      }
+      p[class*=center]{ /*选择class属性值包含center的元素*/
+        color: skyblue;
+        font-size: 23px;
+      }
+    </style>
+</head>
+<body>
+  <div class="nav">
+    <a href="#">百度</a>
+    <a href="#">谷歌</a>
+    <input type="text" value="文本"/>
+    <input type="text" value="文本"/>
+    <input type="text" value="文本"/>
+    <input type="reset" value="重置"/>
+    <input type="reset" value="重置"/>
+    <input type="reset" value="重置"/>
+    <input type="reset" value="重置"/>
+    <input type="submit" value="提交"/>
+    <input type="submit" value="提交"/>
+    <input type="submit" value="提交"/>
+    <input type="submit" value="提交"/>
+  </div>
+  <div class="body">
+    <p class="fontsize24">属性值1</p>
+    <p class="fontsize24">属性值2</p>
+    <p class="fontsize24">属性值3</p>
+    <p class="fontsize24">属性值4</p>
+    <p class="sub-footer">属性值footer</p>
+    <p class="jd-footer">属性值footer</p>
+    <p class="p-center-s1">属性值center</p>
+    <p class="p-center-s2">属性值center</p>
+    <p class="p-center-s3">属性值center</p>
+    <p class="p-center-s4">属性值center</p>
+  </div>
+</body>
+</html>
