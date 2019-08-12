@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      .container{
+        width: 800px;
+        height: 400px;
+        margin: 50px auto;
+        position: relative;
+      }
+      .container img:nth-child(2){
+        width: 800px;
+        height: 400px;
+      }
+      ul{
+        list-style-type: none;
+        display: block;
+      }
+      .leftIcon,.rightIcon{
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        top:50%;
+        margin-top: -16px;
+      }
+      .leftIcon{
+        left: 0px;
+      }
+      .rightIcon{
+        right: 0px;
+      }
+      .circle{
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        width: 65px;
+        height: 13px;
+        margin-left: -32.5px;
+        border-radius: 6px;
+        background: rgba(255,255,255,0.3);
+      }
+      .circle i{
+        width: 9px;
+        height: 9px;
+        border-radius: 50%;
+        background-color:#b7b7b7;
+        float: left;
+        margin: 2px;
+      }
+    </style>
+</head>
+<body>
+  <div class="container">
+    <img src="../../image/left.png" class="leftIcon">
+    <img src="https://img10.360buyimg.com/pop/s590x470_jfs/t1/66632/27/5867/97611/5d400157E85345d78/d506e622fb78c807.jpg.webp">
+    <img src="../../image/right.png" class="rightIcon">
+    <div class="circle">
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+      <i></i>
+    </div>
+  </div>
+</body>
+</html>

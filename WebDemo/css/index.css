@@ -1,0 +1,23 @@
+.wrap{
+  padding: 0 30px;
+}
+header{
+  height: 45px;
+  width: 100%;
+  line-height: 45px;
+  background: #80b500;
+}
+header ul{
+  list-style-type: none;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+header ul li{
+  float: left;
+  background: #80b500;
+}
+header ul li a{
+  padding: 0 45px;
+  color: #fff;
+}
