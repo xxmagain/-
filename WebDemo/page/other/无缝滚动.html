@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+      *{
+        margin: 0;
+        padding: 0;
+      }
+      div{
+        width:  1200px;
+        height: 300px;
+        margin: 100px auto;
+        overflow: hidden;
+      }
+      div ul{
+        width: 2400px;
+        list-style-type: none;
+        animation: moving 5s linear infinite;/*引用动画*/
+      }
+      div li{
+        float: left;
+      }
+      ul img{
+        width: 200px;
+        height: 150px;
+      }
+      @keyframes moving {/* 定义动画*/
+          from{
+            transform: translateX(0);
+          }
+          to{
+            transform: translateX(-1200px);
+          }
+      }
+      div:hover ul {
+        animation-play-state: paused;/*鼠标经过停止*/
+      }
+    </style>
+</head>
+<body>
+<div>
+  <ul>
+    <li><img src="http://img2.imgtn.bdimg.com/it/u=1817942452,3032982386&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img4.imgtn.bdimg.com/it/u=1688026885,2773767715&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img0.imgtn.bdimg.com/it/u=1519175636,579560806&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img2.imgtn.bdimg.com/it/u=2509469443,1652062333&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img1.imgtn.bdimg.com/it/u=1050408062,4187168229&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img2.imgtn.bdimg.com/it/u=1817942452,3032982386&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img4.imgtn.bdimg.com/it/u=1688026885,2773767715&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img0.imgtn.bdimg.com/it/u=1519175636,579560806&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img2.imgtn.bdimg.com/it/u=2509469443,1652062333&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img1.imgtn.bdimg.com/it/u=1050408062,4187168229&fm=26&gp=0.jpg"></li>
+    <li><img src="http://img5.imgtn.bdimg.com/it/u=3987907653,720009510&fm=26&gp=0.jpg"></li>
+  </ul>
+</div>
+</body>
+</html>
